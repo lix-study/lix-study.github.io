@@ -111,7 +111,7 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/contact/" class="waves-effect waves-light">
+    <a href="/contact" class="waves-effect waves-light">
       
       <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
@@ -203,7 +203,7 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/contact/" class="waves-effect waves-light">
+		<a href="/contact" class="waves-effect waves-light">
 			
 			    <i class="fa-fw fas fa-comments"></i>
 			
@@ -561,12 +561,14 @@
 <script>
     let gitalk = new Gitalk({
         clientID: 'Ov23liDLJtbA4MgY0rkZ',
-        clientSecret: '955763576845f4878bd3e1f540580ba39b215462',
+        clientSecret: '18097f2323189f5aa1fe6e97b69629ca26f759e6',
         repo: 'blog-comments',
         owner: 'lix-study',
         admin: ["lix-study"],
         id: '2025-10-08T13-54-06',
         distractionFreeMode: false  // Facebook-like distraction free mode
+          // 新增 proxy 参数，指定代理地址
+        proxy: 'proxy: https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token'
     });
 
     gitalk.render('gitalk-container');
