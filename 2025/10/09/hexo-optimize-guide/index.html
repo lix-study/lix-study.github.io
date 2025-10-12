@@ -29,9 +29,9 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
     <!-- <script src="/libs/prism/prism.js"></script> -->
-<meta name="generator" content="Hexo 8.0.0">
+<meta name="generator" content="Hexo 8.0.0"><link rel="alternate" href="/atom.xml" title="lix-studying" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/atom.xml" title="lix-studying" type="application/atom+xml">
 </head>
 
 
@@ -409,7 +409,12 @@
             <div id="articleContent">
                 <h1 id="hexo使用过程中遇到的问题"><a href="#hexo使用过程中遇到的问题" class="headerlink" title="hexo使用过程中遇到的问题"></a>hexo使用过程中遇到的问题</h1><h2 id="代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号"><a href="#代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号" class="headerlink" title="代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号"></a>代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号</h2><p>如图所示：</p>
 <p><img src="image-20251012195141522.png" alt="image-20251012195141522"></p>
-<p>11</p>
+<p>解决方案：</p>
+<p>在prism.css文件中</p>
+<p>把 <code>pre[class*=language-].line-numbers&gt;code {  position: relative;  white-space: inherit } </code></p>
+<p>改成 <code>pre[class*=language-].line-numbers&gt;code {  position: sticky;  white-space: inherit } </code></p>
+<p>就解决问题了</p>
+<p><code>sticky</code> 并没有直接修改行高（<code>line-height</code>），而是通过 <strong>优化代码内容在滚动时的定位稳定性</strong>，解决了代码行与行号的错位问题，从而消除了 “行高异常”“全选覆盖前一行” 的视觉效果。这种情况在 “带行号的长代码块” 或 “需要频繁滚动的代码块” 中尤为常见，<code>sticky</code> 恰好弥补了 <code>relative</code> 在滚动场景下的定位缺陷。</p>
 
                 
             </div>

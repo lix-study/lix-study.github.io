@@ -132,7 +132,7 @@
       <link href="//2025/10/09/hexo-optimize-guide/"/>
       <url>//2025/10/09/hexo-optimize-guide/</url>
       
-        <content type="html"><![CDATA[<h1 id="hexo使用过程中遇到的问题"><a href="#hexo使用过程中遇到的问题" class="headerlink" title="hexo使用过程中遇到的问题"></a>hexo使用过程中遇到的问题</h1><h2 id="代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号"><a href="#代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号" class="headerlink" title="代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号"></a>代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号</h2><p>如图所示：</p><p><img src="image-20251012195141522.png" alt="image-20251012195141522"></p><p>11</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="hexo使用过程中遇到的问题"><a href="#hexo使用过程中遇到的问题" class="headerlink" title="hexo使用过程中遇到的问题"></a>hexo使用过程中遇到的问题</h1><h2 id="代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号"><a href="#代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号" class="headerlink" title="代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号"></a>代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号</h2><p>如图所示：</p><p><img src="image-20251012195141522.png" alt="image-20251012195141522"></p><p>解决方案：</p><p>在prism.css文件中</p><p>把 <code>pre[class*=language-].line-numbers&gt;code {  position: relative;  white-space: inherit } </code></p><p>改成 <code>pre[class*=language-].line-numbers&gt;code {  position: sticky;  white-space: inherit } </code></p><p>就解决问题了</p><p><code>sticky</code> 并没有直接修改行高（<code>line-height</code>），而是通过 <strong>优化代码内容在滚动时的定位稳定性</strong>，解决了代码行与行号的错位问题，从而消除了 “行高异常”“全选覆盖前一行” 的视觉效果。这种情况在 “带行号的长代码块” 或 “需要频繁滚动的代码块” 中尤为常见，<code>sticky</code> 恰好弥补了 <code>relative</code> 在滚动场景下的定位缺陷。</p>]]></content>
       
       
       <categories>
