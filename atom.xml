@@ -6,7 +6,7 @@
   <link href="https://lix-study.github.io/atom.xml" rel="self"/>
   
   <link href="https://lix-study.github.io/"/>
-  <updated>2025-10-12T09:56:03.516Z</updated>
+  <updated>2025-10-12T12:01:21.419Z</updated>
   <id>https://lix-study.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>  </title>
+    <link href="https://lix-study.github.io/2025/10/12/standtard/"/>
+    <id>https://lix-study.github.io/2025/10/12/standtard/</id>
+    <published>2025-10-12T11:56:47.646Z</published>
+    <updated>2025-10-12T12:01:21.419Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;文章正文开始&quot;&gt;&lt;a href=&quot;#文章正文开始&quot; class=&quot;headerlink&quot; title=&quot;文章正文开始&quot;&gt;&lt;/a&gt;文章正文开始&lt;/h1&gt;&lt;p&gt;大家好，今天分享 Hexo</summary>
+        
+      
+    
+    
+    
+    <category term="技术笔记" scheme="https://lix-study.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Hexo 教程" scheme="https://lix-study.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Hexo-%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Hexo" scheme="https://lix-study.github.io/tags/Hexo/"/>
+    
+    <category term="SEO" scheme="https://lix-study.github.io/tags/SEO/"/>
+    
+    <category term="RSS" scheme="https://lix-study.github.io/tags/RSS/"/>
+    
+  </entry>
   
   <entry>
     <title>5分钟 修改Gitalk代理地址，解决无法登录问题</title>
@@ -75,6 +106,52 @@
     <category term="Gitalk" scheme="https://lix-study.github.io/tags/Gitalk/"/>
     
     <category term="个人博客中的优化" scheme="https://lix-study.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E7%9A%84%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开发过程遇到问题的解决经验总结</title>
+    <link href="https://lix-study.github.io/2025/10/09/kai-fa-guo-cheng-yu-dao-wen-ti-de-jie-jue-jing-yan-zong-jie/"/>
+    <id>https://lix-study.github.io/2025/10/09/kai-fa-guo-cheng-yu-dao-wen-ti-de-jie-jue-jing-yan-zong-jie/</id>
+    <published>2025-10-09T02:30:00.000Z</published>
+    <updated>2025-10-12T12:12:09.686Z</updated>
+    
+    
+    <summary type="html">本文介绍如何用插件解决 Hexo 中文链接问题，以及配置 RSS 订阅功能，提升博客实用性。</summary>
+    
+    
+    
+    <category term="技术笔记" scheme="https://lix-study.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Hexo 教程" scheme="https://lix-study.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Hexo-%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Hexo" scheme="https://lix-study.github.io/tags/Hexo/"/>
+    
+    <category term="SEO" scheme="https://lix-study.github.io/tags/SEO/"/>
+    
+    <category term="RSS" scheme="https://lix-study.github.io/tags/RSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo使用中遇到的问题</title>
+    <link href="https://lix-study.github.io/2025/10/09/hexo-optimize-guide/"/>
+    <id>https://lix-study.github.io/2025/10/09/hexo-optimize-guide/</id>
+    <published>2025-10-09T02:30:00.000Z</published>
+    <updated>2025-10-12T11:54:36.293Z</updated>
+    
+    
+    <summary type="html">本文介绍如何用插件解决 Hexo 中文链接问题，以及配置 RSS 订阅功能，提升博客实用性。</summary>
+    
+    
+    
+    <category term="技术笔记" scheme="https://lix-study.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Hexo 教程" scheme="https://lix-study.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Hexo-%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Hexo" scheme="https://lix-study.github.io/tags/Hexo/"/>
     
   </entry>
   

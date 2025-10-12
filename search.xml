@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>  </title>
+      <link href="/2025/10/12/standtard/"/>
+      <url>/2025/10/12/standtard/</url>
+      
+        <content type="html"><![CDATA[<h1 id="文章正文开始"><a href="#文章正文开始" class="headerlink" title="文章正文开始"></a>文章正文开始</h1><p>大家好，今天分享 Hexo 博客的两个实用优化技巧…</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术笔记 </category>
+          
+          <category> Hexo 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> SEO </tag>
+            
+            <tag> RSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>5分钟 修改Gitalk代理地址，解决无法登录问题</title>
       <link href="/2025/10/11/5-fen-zhong-xiu-gai-gitalk-dai-li-di-zhi-jie-jue-wu-fa-deng-lu-wen-ti/"/>
       <url>/2025/10/11/5-fen-zhong-xiu-gai-gitalk-dai-li-di-zhi-jie-jue-wu-fa-deng-lu-wen-ti/</url>
@@ -58,6 +89,64 @@
             <tag> Gitalk </tag>
             
             <tag> 个人博客中的优化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>开发过程遇到问题的解决经验总结</title>
+      <link href="/2025/10/09/kai-fa-guo-cheng-yu-dao-wen-ti-de-jie-jue-jing-yan-zong-jie/"/>
+      <url>/2025/10/09/kai-fa-guo-cheng-yu-dao-wen-ti-de-jie-jue-jing-yan-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<h1 id="开发过程遇到问题的解决经验总结"><a href="#开发过程遇到问题的解决经验总结" class="headerlink" title="开发过程遇到问题的解决经验总结"></a>开发过程遇到问题的解决经验总结</h1><p><strong>一、观察</strong></p><ol><li>先观察问题出现错误的地方和特点</li><li>探究错误出现的原理</li><li>检查是否之前出现相似错误，看是否有解决办法</li><li>如果没有解决办法，再上网搜索相关经验</li></ol><p><strong>二、搜索经验</strong></p><ol><li><p>如果是在github中已经存在的项目，就先到该项目中的issue中看看是有人不是出现了一样的问题</p><p><strong>如果出现了一样的问题</strong></p><ul><li>在讨论区查看是否有效的解决办法</li><li>试验并总结经验</li></ul></li><li><p>进行百度搜索，看是否有相关问题的帖子</p><ul><li>总结经验，观察帖子中出现问题的原因与解决方案</li></ul></li><li><p>针对问题与之前积累的经验，对ai进行特定问题的提问</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术笔记 </category>
+          
+          <category> Hexo 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> SEO </tag>
+            
+            <tag> RSS </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo使用中遇到的问题</title>
+      <link href="//2025/10/09/hexo-optimize-guide/"/>
+      <url>//2025/10/09/hexo-optimize-guide/</url>
+      
+        <content type="html"><![CDATA[<h1 id="hexo使用过程中遇到的问题"><a href="#hexo使用过程中遇到的问题" class="headerlink" title="hexo使用过程中遇到的问题"></a>hexo使用过程中遇到的问题</h1><h2 id="代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号"><a href="#代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号" class="headerlink" title="代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号"></a>代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号</h2><p>如图所示：</p><p><img src="image-20251012195141522.png" alt="image-20251012195141522"></p><p>11</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术笔记 </category>
+          
+          <category> Hexo 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
