@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="5分钟 修改Gitalk代理地址，解决无法登录问题, lix-studying">
+    <meta name="keywords" content="test, lix-studying">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>5分钟 修改Gitalk代理地址，解决无法登录问题 | lix-studying</title>
+    <title>test | lix-studying</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -228,12 +228,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">5分钟 修改Gitalk代理地址，解决无法登录问题</h1>
+                    <h1 class="description center-align post-title">test</h1>
                 </div>
             </div>
         </div>
@@ -415,38 +415,10 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="5分钟-修改Gitalk代理地址，解决无法登录问题"><a href="#5分钟-修改Gitalk代理地址，解决无法登录问题" class="headerlink" title="5分钟 修改Gitalk代理地址，解决无法登录问题"></a>5分钟 修改Gitalk代理地址，解决无法登录问题</h1><p>最近心血来潮，也不算吧，一直都有这个想法，只是一直都未付诸行动——搭建个人博客。</p>
-<p>应该暂时还没有经济收入，所以放弃了自建动态个人博客网站，毕竟不仅要花费时间来维护，还要花点小钱，没啥必要~~，所以采用了用使用静态站点生成器（如Hexo）搭建博客。</p>
-<p>但在搭建过程中还是遇到了诸多问题，故记之~~</p>
-<p><strong>问题一：我在使用gitalk来搭建博客评论组件的时候，出现了<code>gitalk network error</code>的提示，忘记保存图片了—-</strong></p>
-<p><strong>出现错误的原因</strong>：是 “Gitalk 向 GitHub OAuth 接口发送请求时，网络连接失败（超时 / 被拦截 / 代理无效）”。查看了一下代码，才发现原来是代码中gitalk的代理已经失效了(这个地址被墙了)，所以得换一个代理。</p>
-<blockquote>
-<p>扩展点：</p>
-<ol>
-<li><a href="#">为什么gittalk需要代理？</a></li>
-<li><a href="#">Gitalk 向 GitHub OAuth 接口发送请求是干什么？</a></li>
-</ol>
+                <h1 id="test代码块功能"><a href="#test代码块功能" class="headerlink" title="test代码块功能"></a>test代码块功能</h1><blockquote>
+<p>111</p>
 </blockquote>
-<p>如果继续去寻找 免费公共代理服务，不仅花费时间，而且之前使用的公共代理（如 <code>netnr-proxy.cloudno.de</code>、<code>cors-anywhere.herokuapp.com</code>）常常会因 “请求限流”“服务端故障” 或 “域名失效”，导致 Gitalk 的 OAuth 请求超时。</p>
-<p>所以能够长期稳定的不出错，建议<strong>自建 CORS proxy</strong>：</p>
-<ol>
-<li>克隆 <a target="_blank" rel="noopener" href="https://github.com/Rob--W/cors-anywhere">cors-anywhere</a> 仓库；</li>
-<li>部署到自己的服务器（如 Vercel、Cloudflare Workers）；</li>
-<li>将 Gitalk 的 <code>proxy</code> 指向自建域名（如 <code>https://your-proxy-domain.com/https://github.com/login/oauth/access_token</code>）。</li>
-</ol>
-<h2 id="解决步骤"><a href="#解决步骤" class="headerlink" title="解决步骤"></a>解决步骤</h2><p>这里采用<code>Cloudflare Workers</code>来实现</p>
-<p><a href="%5B%E4%BD%BF%E7%94%A8Cloudflate%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%85%8D%E8%B4%B9%E4%BB%A3%E7%90%86%E8%8A%82%E7%82%B9%5D(https://blog.eimoon.com/p/%E4%BD%BF%E7%94%A8cloudflate%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E5%85%8D%E8%B4%B9%E4%BB%A3%E7%90%86%E8%8A%82%E7%82%B9/)">Cloudflare Workers的简介，前期注册过程可看</a></p>
-<ol>
-<li><strong>创建 Workers</strong>：登录 <a target="_blank" rel="noopener" href="https://dash.cloudflare.com/">Cloudflare 控制台</a> → 左侧 “Workers 和 Pages” → “创建应用程序” → “创建 Worker”，命名后点击 “部署”。</li>
-</ol>
-<p>![屏幕截图 2025-10-11 182221](屏幕截图 2025-10-11 182221.png)</p>
-<ol start="2">
-<li>选择worker中的拖放文件</li>
-</ol>
-<p>![屏幕截图 2025-10-11 175600](屏幕截图 2025-10-11 175600.png)</p>
-<ol start="3">
-<li>创建一个js文件，<strong>粘贴以下代理代码</strong>（记得替换 <code>client_id</code> 和 <code>client_secret</code> 为你自己的 GitHub OAuth 信息）</li>
-</ol>
+<p><code>javascript</code></p>
 <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
   <span class="token keyword">async</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token parameter">request</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -507,44 +479,31 @@
   <span class="token punctuation">}</span><span class="token punctuation">,</span>
 <span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-
-
-<p>点击 “保存并部署”，记录生成的域名（如 <code>your-worker-name.cloudflareworkers.com</code>）。</p>
-<p>![屏幕截图 2025-10-11 180043](屏幕截图 2025-10-11 180043.png)</p>
-<ol start="5">
-<li><strong>修改 Gitalk 配置</strong>：</li>
-</ol>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">new</span> <span class="token class-name">Gitalk</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-  <span class="token literal-property property">clientID</span><span class="token operator">:</span> <span class="token string">"你的clientID"</span><span class="token punctuation">,</span>
-  <span class="token comment">// clientSecret: "删除这行",</span>
-  <span class="token literal-property property">repo</span><span class="token operator">:</span> <span class="token string">"你的评论仓库"</span><span class="token punctuation">,</span>
-  <span class="token literal-property property">owner</span><span class="token operator">:</span> <span class="token string">"你的GitHub用户名"</span><span class="token punctuation">,</span>
-  <span class="token literal-property property">admin</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"你的GitHub用户名"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
-  <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">"文章标识"</span><span class="token punctuation">,</span>
-  <span class="token literal-property property">proxy</span><span class="token operator">:</span> <span class="token string">"https://your-worker-name.cloudflareworkers.com/get_accesstoken"</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p><code> catch (err) {         return new Response(</code>错误：${err.message}`, { status: 500 });<br>      }<br>    }</p>
+<pre><code>// 其他请求方法（如 GET）返回“方法不允许”
+return new Response("不允许的请求方法", { status: 405 });
+</code></pre>
+<p>  },<br>};`</p>
+<p><code>java</code></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">hello<span class="token punctuation">,</span>world
+test code<span class="token punctuation">,</span>
+thanks<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 
 
-<ol start="6">
-<li>验证建议（可跳过）</li>
-</ol>
-<p>部署 Worker 后，可通过以下方式测试是否生效：</p>
-<ol>
-<li><p>用 Postman 或浏览器控制台，发送 <code>POST</code> 请求到你的 Worker 域名（如 <code>https://xxx.workers.dev/get_accesstoken</code>）。</p>
-</li>
-<li><p>请求体（JSON 格式）带上一个有效的 GitHub 临时授权码（可通过手动触发 Gitalk 登录，抓包获取 <code>code</code>）</p>
-</li>
-</ol>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token punctuation">{</span><span class="token string-property property">"code"</span><span class="token operator">:</span> <span class="token string">"你的临时授权码"</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p><code>c++</code></p>
+<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">hello,world
+test code,
+thanks<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<ol start="3">
-<li><p>若返回类似 <code>{"access_token": "...", "token_type": "bearer"}</code> 的结果，说明代理生效。</p>
-</li>
-<li><p>重新部署hexo：`hexo clear &amp;&amp; hexo g &amp;&amp; hexo d “</p>
-</li>
-</ol>
-<p>然后可以了。</p>
+
+
+
+
+
+
+
+
 
                 
             </div>
@@ -571,7 +530,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lix-study.github.io/2025/10/11/5-fen-zhong-xiu-gai-gitalk-dai-li-di-zhi-jie-jue-wu-fa-deng-lu-wen-ti/">https://lix-study.github.io/2025/10/11/5-fen-zhong-xiu-gai-gitalk-dai-li-di-zhi-jie-jue-wu-fa-deng-lu-wen-ti/</a>
+                    <a href="https://lix-study.github.io/2025/10/11/testcode/">https://lix-study.github.io/2025/10/11/testcode/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -818,10 +777,9 @@ gitalk.render('gitalk-container');
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
                 <a href="/2025/10/11/5-fen-zhong-xiu-gai-gitalk-dai-li-di-zhi-jie-jue-wu-fa-deng-lu-wen-ti/">
                     <div class="card-image">
@@ -839,9 +797,9 @@ gitalk.render('gitalk-container');
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-10-11
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2025-10-11
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -858,7 +816,6 @@ gitalk.render('gitalk-container');
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -885,13 +842,13 @@ gitalk.render('gitalk-container');
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2025/10/11/testcode/">
+                <a href="/2025/10/07/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="test">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">test</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -902,39 +859,15 @@ gitalk.render('gitalk-container');
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-10-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-10-07
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    技术笔记
-                                </a>
-                            
-                            <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Hexo-%E6%95%99%E7%A8%8B/" class="post-category">
-                                    Hexo 教程
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            lix
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                    <a href="/tags/Gitalk/">
-                        <span class="chip bg-color">Gitalk</span>
-                    </a>
-                    
-                    <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E7%9A%84%E4%BC%98%E5%8C%96/">
-                        <span class="chip bg-color">个人博客中的优化</span>
-                    </a>
-                    
                 </div>
                 
             </div>

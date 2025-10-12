@@ -6,7 +6,7 @@
   <link href="https://lix-study.github.io/atom.xml" rel="self"/>
   
   <link href="https://lix-study.github.io/"/>
-  <updated>2025-10-11T14:12:50.767Z</updated>
+  <updated>2025-10-12T07:20:37.731Z</updated>
   <id>https://lix-study.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://lix-study.github.io/2025/10/11/5-fen-zhong-xiu-gai-gitalk-dai-li-di-zhi-jie-jue-wu-fa-deng-lu-wen-ti/"/>
     <id>https://lix-study.github.io/2025/10/11/5-fen-zhong-xiu-gai-gitalk-dai-li-di-zhi-jie-jue-wu-fa-deng-lu-wen-ti/</id>
     <published>2025-10-11T09:04:00.000Z</published>
-    <updated>2025-10-11T14:12:50.767Z</updated>
+    <updated>2025-10-12T07:20:37.731Z</updated>
     
     
       
@@ -29,6 +29,37 @@
         
         
     <summary type="html">&lt;h1 id=&quot;5分钟-修改Gitalk代理地址，解决无法登录问题&quot;&gt;&lt;a href=&quot;#5分钟-修改Gitalk代理地址，解决无法登录问题&quot; class=&quot;headerlink&quot; title=&quot;5分钟 修改Gitalk代理地址，解决无法登录问题&quot;&gt;&lt;/a&gt;5分钟</summary>
+        
+      
+    
+    
+    
+    <category term="技术笔记" scheme="https://lix-study.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="Hexo 教程" scheme="https://lix-study.github.io/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Hexo-%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="Hexo" scheme="https://lix-study.github.io/tags/Hexo/"/>
+    
+    <category term="Gitalk" scheme="https://lix-study.github.io/tags/Gitalk/"/>
+    
+    <category term="个人博客中的优化" scheme="https://lix-study.github.io/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E7%9A%84%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://lix-study.github.io/2025/10/11/testcode/"/>
+    <id>https://lix-study.github.io/2025/10/11/testcode/</id>
+    <published>2025-10-11T09:04:00.000Z</published>
+    <updated>2025-10-12T07:13:25.351Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;test代码块功能&quot;&gt;&lt;a href=&quot;#test代码块功能&quot; class=&quot;headerlink&quot;</summary>
         
       
     
