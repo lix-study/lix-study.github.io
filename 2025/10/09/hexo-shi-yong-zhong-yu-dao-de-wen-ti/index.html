@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="test, lix-studying">
+    <meta name="keywords" content="hexo使用中遇到的问题, lix-studying">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>test | lix-studying</title>
+    <title>hexo使用中遇到的问题 | lix-studying</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -228,12 +228,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">test</h1>
+                    <h1 class="description center-align post-title">hexo使用中遇到的问题</h1>
                 </div>
             </div>
         </div>
@@ -353,14 +353,6 @@
                                 <span class="chip bg-color">Hexo</span>
                             </a>
                         
-                            <a href="/tags/Gitalk/">
-                                <span class="chip bg-color">Gitalk</span>
-                            </a>
-                        
-                            <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E7%9A%84%E4%BC%98%E5%8C%96/">
-                                <span class="chip bg-color">个人博客中的优化</span>
-                            </a>
-                        
                     </div>
                     
                 </div>
@@ -386,7 +378,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2025-10-11
+                    2025-10-09
                 </div>
                 
 
@@ -415,90 +407,14 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="test代码块功能"><a href="#test代码块功能" class="headerlink" title="test代码块功能"></a>test代码块功能</h1><blockquote>
-<p>111</p>
-</blockquote>
-<p><code>javascript</code></p>
-<pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">{</span>
-  <span class="token keyword">async</span> <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token parameter">request</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">const</span> url <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">URL</span><span class="token punctuation">(</span>request<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token comment">// 只处理 /get_accesstoken 路径</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>url<span class="token punctuation">.</span>pathname <span class="token operator">!==</span> <span class="token string">"/get_accesstoken"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Response</span><span class="token punctuation">(</span><span class="token string">"Not Found"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">status</span><span class="token operator">:</span> <span class="token number">404</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment">// 1. 处理 OPTIONS 预检请求（浏览器跨域前会先发这个请求）</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>request<span class="token punctuation">.</span>method <span class="token operator">===</span> <span class="token string">"OPTIONS"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Response</span><span class="token punctuation">(</span><span class="token keyword">null</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
-        <span class="token literal-property property">status</span><span class="token operator">:</span> <span class="token number">204</span><span class="token punctuation">,</span> <span class="token comment">// 成功但无内容</span>
-        <span class="token literal-property property">headers</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-          <span class="token string-property property">"Access-Control-Allow-Origin"</span><span class="token operator">:</span> <span class="token string">"*"</span><span class="token punctuation">,</span> <span class="token comment">// 允许所有域名跨域（也可指定你的博客域名，更安全）</span>
-          <span class="token string-property property">"Access-Control-Allow-Methods"</span><span class="token operator">:</span> <span class="token string">"POST, OPTIONS"</span><span class="token punctuation">,</span> <span class="token comment">// 允许的请求方法</span>
-          <span class="token string-property property">"Access-Control-Allow-Headers"</span><span class="token operator">:</span> <span class="token string">"Content-Type"</span><span class="token punctuation">,</span> <span class="token comment">// 允许的请求头</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment">// 2. 处理 POST 请求（Gitalk 实际发的请求）</span>
-    <span class="token keyword">if</span> <span class="token punctuation">(</span>request<span class="token punctuation">.</span>method <span class="token operator">===</span> <span class="token string">"POST"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-      <span class="token keyword">try</span> <span class="token punctuation">{</span>
-        <span class="token keyword">const</span> <span class="token punctuation">{</span> code <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> request<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// 解析 Gitalk 传来的临时授权码</span>
-        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>code<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Response</span><span class="token punctuation">(</span><span class="token string">"缺少 code 参数"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">status</span><span class="token operator">:</span> <span class="token number">400</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        <span class="token comment">// 替换为你自己的 GitHub OAuth 信息</span>
-        <span class="token keyword">const</span> client_id <span class="token operator">=</span> <span class="token string">"Ov23liDLJtbA4MgY0rkZ"</span><span class="token punctuation">;</span>
-        <span class="token keyword">const</span> client_secret <span class="token operator">=</span> <span class="token string">"f638c999db3724df4e00ea78afa73517069b4110"</span><span class="token punctuation">;</span>
-
-        <span class="token comment">// 向 GitHub 发送请求，兑换 access_token</span>
-        <span class="token keyword">const</span> githubResponse <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>
-          <span class="token string">"https://github.com/login/oauth/access_token"</span><span class="token punctuation">,</span>
-          <span class="token punctuation">{</span>
-            <span class="token literal-property property">method</span><span class="token operator">:</span> <span class="token string">"POST"</span><span class="token punctuation">,</span>
-            <span class="token literal-property property">headers</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-              <span class="token string-property property">"Content-Type"</span><span class="token operator">:</span> <span class="token string">"application/x-www-form-urlencoded"</span><span class="token punctuation">,</span>
-              <span class="token literal-property property">Accept</span><span class="token operator">:</span> <span class="token string">"application/json"</span><span class="token punctuation">,</span>
-            <span class="token punctuation">}</span><span class="token punctuation">,</span>
-            <span class="token literal-property property">body</span><span class="token operator">:</span> <span class="token keyword">new</span> <span class="token class-name">URLSearchParams</span><span class="token punctuation">(</span><span class="token punctuation">{</span> client_id<span class="token punctuation">,</span> client_secret<span class="token punctuation">,</span> code <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
-          <span class="token punctuation">}</span>
-        <span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-        <span class="token comment">// 把 GitHub 的响应转发给 Gitalk，并带上跨域头</span>
-        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Response</span><span class="token punctuation">(</span><span class="token keyword">await</span> githubResponse<span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
-          <span class="token literal-property property">headers</span><span class="token operator">:</span> <span class="token punctuation">{</span>
-            <span class="token string-property property">"Content-Type"</span><span class="token operator">:</span> <span class="token string">"application/json"</span><span class="token punctuation">,</span>
-            <span class="token string-property property">"Access-Control-Allow-Origin"</span><span class="token operator">:</span> <span class="token string">"*"</span><span class="token punctuation">,</span> <span class="token comment">// 允许跨域</span>
-          <span class="token punctuation">}</span><span class="token punctuation">,</span>
-        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Response</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">错误：</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>err<span class="token punctuation">.</span>message<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">status</span><span class="token operator">:</span> <span class="token number">500</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-
-    <span class="token comment">// 其他请求方法（如 GET）返回“方法不允许”</span>
-    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Response</span><span class="token punctuation">(</span><span class="token string">"不允许的请求方法"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">status</span><span class="token operator">:</span> <span class="token number">405</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span><span class="token punctuation">,</span>
-<span class="token punctuation">}</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p><code> catch (err) {         return new Response(</code>错误：${err.message}`, { status: 500 });<br>      }<br>    }</p>
-<pre><code>// 其他请求方法（如 GET）返回“方法不允许”
-return new Response("不允许的请求方法", { status: 405 });
-</code></pre>
-<p>  },<br>};`</p>
-<p><code>java</code></p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">hello<span class="token punctuation">,</span>world
-test code<span class="token punctuation">,</span>
-thanks<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p><code>c++</code></p>
-<pre class="line-numbers language-c++" data-language="c++"><code class="language-c++">hello,world
-test code,
-thanks<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-
-
-<p><img src="image-20251011174457920.png" alt="image-20251011174457920"></p>
+                <h1 id="hexo使用过程中遇到的问题"><a href="#hexo使用过程中遇到的问题" class="headerlink" title="hexo使用过程中遇到的问题"></a>hexo使用过程中遇到的问题</h1><h2 id="代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号"><a href="#代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号" class="headerlink" title="代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号"></a>代码块部分选中的时候会与上一行代码有重叠问题并且不显示行号</h2><p>如图所示：</p>
+<p><img src="image-20251012195141522.png" alt="image-20251012195141522"></p>
+<p>解决方案：</p>
+<p>在prism.css文件中</p>
+<p>把 <code>pre[class*=language-].line-numbers&gt;code {  position: relative;  white-space: inherit } </code></p>
+<p>改成 <code>pre[class*=language-].line-numbers&gt;code {  position: sticky;  white-space: inherit } </code></p>
+<p>就解决问题了</p>
+<p><code>sticky</code> 并没有直接修改行高（<code>line-height</code>），而是通过 <strong>优化代码内容在滚动时的定位稳定性</strong>，解决了代码行与行号的错位问题，从而消除了 “行高异常”“全选覆盖前一行” 的视觉效果。这种情况在 “带行号的长代码块” 或 “需要频繁滚动的代码块” 中尤为常见，<code>sticky</code> 恰好弥补了 <code>relative</code> 在滚动场景下的定位缺陷。</p>
 
                 
             </div>
@@ -525,7 +441,7 @@ thanks<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lix-study.github.io/2025/10/11/testcode/">https://lix-study.github.io/2025/10/11/testcode/</a>
+                    <a href="https://lix-study.github.io/2025/10/09/hexo-shi-yong-zhong-yu-dao-de-wen-ti/">https://lix-study.github.io/2025/10/09/hexo-shi-yong-zhong-yu-dao-de-wen-ti/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -565,14 +481,6 @@ thanks<span aria-hidden="true" class="line-numbers-rows"><span></span><span></sp
                             
                                 <a href="/tags/Hexo/">
                                     <span class="chip bg-color">Hexo</span>
-                                </a>
-                            
-                                <a href="/tags/Gitalk/">
-                                    <span class="chip bg-color">Gitalk</span>
-                                </a>
-                            
-                                <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E7%9A%84%E4%BC%98%E5%8C%96/">
-                                    <span class="chip bg-color">个人博客中的优化</span>
                                 </a>
                             
                         </div>
@@ -745,7 +653,7 @@ let gitalk = new Gitalk({
     repo: 'blog-comments',
     owner: 'lix-study',
     admin: ["lix-study"],
-    id: '2025-10-11T17-04-00',
+    id: '2025-10-09T10-30-00',
     distractionFreeMode: false,  // 注意：这一行末尾要加逗号，因为后续还有属性
     proxy: 'https://tight-meadow-6791.2011274879.workers.dev/get_accesstoken'  // 修正：去掉值里的多余`proxy:`
 });
@@ -776,24 +684,24 @@ gitalk.render('gitalk-container');
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2025/10/12/standtard/">
+                <a href="/2025/10/09/kai-fa-guo-cheng-yu-dao-wen-ti-de-jie-jue-jing-yan-zong-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="  ">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="开发过程遇到问题的解决经验总结">
                         
-                        <span class="card-title">  </span>
+                        <span class="card-title">开发过程遇到问题的解决经验总结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            本文介绍如何用插件解决 Hexo 中文链接问题，以及配置 RSS 订阅功能，提升博客实用性。
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2025-10-12
+                            <i class="far fa-clock fa-fw icon-date"></i>2025-10-09
                         </span>
                         <span class="publish-author">
                             
@@ -837,13 +745,13 @@ gitalk.render('gitalk-container');
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2025/10/11/5-fen-zhong-xiu-gai-gitalk-dai-li-di-zhi-jie-jue-wu-fa-deng-lu-wen-ti/">
+                <a href="/2025/10/07/hello-world/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="5分钟 修改Gitalk代理地址，解决无法登录问题">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
                         
-                        <span class="card-title">5分钟 修改Gitalk代理地址，解决无法登录问题</span>
+                        <span class="card-title">Hello World</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -854,39 +762,15 @@ gitalk.render('gitalk-container');
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2025-10-11
+                                <i class="far fa-clock fa-fw icon-date"></i>2025-10-07
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    技术笔记
-                                </a>
-                            
-                            <a href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Hexo-%E6%95%99%E7%A8%8B/" class="post-category">
-                                    Hexo 教程
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            lix
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Hexo/">
-                        <span class="chip bg-color">Hexo</span>
-                    </a>
-                    
-                    <a href="/tags/Gitalk/">
-                        <span class="chip bg-color">Gitalk</span>
-                    </a>
-                    
-                    <a href="/tags/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E7%9A%84%E4%BC%98%E5%8C%96/">
-                        <span class="chip bg-color">个人博客中的优化</span>
-                    </a>
-                    
                 </div>
                 
             </div>
